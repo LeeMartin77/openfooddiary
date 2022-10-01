@@ -3,6 +3,8 @@
     import { apiFetch } from 'src/lib/utilities/index';
     import type { FoodLogEntry } from '../types/FoodLogEntry';
     import LogEntryInterface from './LogEntryInterface.svelte';
+
+    import DailyGraph from "./DailyGraph.svelte";
     export let day: Date;
 
     let loading = true;
@@ -36,7 +38,7 @@
 
     $: updateData(day)
 </script>
-
+<DailyGraph data={dayData}/>
 <div class="logs-area">
     {#if dayData.length === 0}
     <div class="raw-text-message">

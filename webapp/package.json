@@ -16,6 +16,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/svelte": "^3.2.1",
     "@tsconfig/svelte": "^3.0.0",
+    "d3": "^7.6.1",
     "jsdom": "^20.0.0",
     "postcss": "^8.4.16",
     "sass": "^1.54.5",
